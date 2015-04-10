@@ -4,38 +4,38 @@
 
 .triangle {
     border-color: transparent transparent coral transparent;
-        border-style: solid;
-        border-width: 0px 200px 200px 200px;
-        height: 0px;
-        width: 0px;
+    border-style: solid;
+    border-width: 0px 200px 200px 200px;
+    height: 0px;
+    width: 0px;
     -webkit-animation: square-to-triangle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
 }
 
 @-webkit-keyframes square-to-triangle {
   0%  {
-    /*border-radius:0 0 0 0;*/
-    background:transparent transparent coral transparent;
+    border-color:transparent transparent coral transparent;
+    border-width: 0px 100px 200px 100px;
     transform:rotate(0deg);
   }
   25%  {
     top-border: none;
-    /*border-radius:50% 0 0 0;*/
-    background:transparent transparent darksalmon transparent;
+    border-color:transparent transparent darksalmon transparent;
+    border-width: 0px 100px 100px 200px;
     transform:rotate(45deg);
   }
   50%  {
-    /*border-radius:50% 50% 0 0;*/
-    background:transparent transparent indianred transparent;
+    border-color:transparent transparent indianred transparent;
+    border-width: 0px 200px 100px 100px;
     transform:rotate(90deg);
   }
   75%  {
-    /*border-radius:50% 50% 50% 0;*/
-    background:transparent transparent lightcoral transparent;
+    border-color:transparent transparent lightcoral transparent;
+    border-width: 0px 200px 200px 100px;
     transform:rotate(135deg);
   }
   100% {
-    /*border-radius:50%;*/
-    background:transparent transparent darksalmon transparent;
+    border-color:transparent transparent darksalmon transparent;
+    border-width: 0px 100px 100px 100px;
     transform:rotate(180deg);
   }
 }
