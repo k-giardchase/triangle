@@ -1,7 +1,11 @@
 describe('triangleIdentifier', function() {
 
-    it('is an equilaterial triangle for a user input where all side lengths are equal', function() {
+    it('is an equilaterial triangle for a user input where side length a is equal to both b and c', function() {
         expect(triangleIdentifier(3,3,3)).to.equal('Equilateral');
+    });
+
+    it('is an equilateral triangle for a user input where side length b is equal to both a and c', function() {
+        expect(triangleIdentifier(3,3,3)).to.equal('Equilateral')
     });
 
     it('is an isosceles triangle for a user input where side lengths a and b are equal, but not c', function() {
