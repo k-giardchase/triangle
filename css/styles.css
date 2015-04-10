@@ -2,21 +2,40 @@
     display: none;
 }
 
-@keyframes triangleFade {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+.triangle {
+    border-color: transparent transparent coral transparent;
+        border-style: solid;
+        border-width: 0px 200px 200px 200px;
+        height: 0px;
+        width: 0px;
+    -webkit-animation: square-to-triangle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
 }
 
-@keyframes triangleRotate
-
-.element {
-    @-webkit-keyframes triangleFade 4s 1s infinite linear alternate;
-    @-moz-keyframes triangleFade 4s 1s infinite linear alternate;
-    @-ms-keyframes triangleFade 4s 1s infinite linear alternate;
-    @-o-keyframes triangleFade 4s 1s infinite linear alternate;
-    @keyframes triangleFade 4s 1s infinite linear alternate;
+@-webkit-keyframes square-to-triangle {
+  0%  {
+    /*border-radius:0 0 0 0;*/
+    background:transparent transparent coral transparent;
+    transform:rotate(0deg);
+  }
+  25%  {
+    top-border: none;
+    /*border-radius:50% 0 0 0;*/
+    background:transparent transparent darksalmon transparent;
+    transform:rotate(45deg);
+  }
+  50%  {
+    /*border-radius:50% 50% 0 0;*/
+    background:transparent transparent indianred transparent;
+    transform:rotate(90deg);
+  }
+  75%  {
+    /*border-radius:50% 50% 50% 0;*/
+    background:transparent transparent lightcoral transparent;
+    transform:rotate(135deg);
+  }
+  100% {
+    /*border-radius:50%;*/
+    background:transparent transparent darksalmon transparent;
+    transform:rotate(180deg);
+  }
 }
