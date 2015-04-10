@@ -23,4 +23,9 @@ describe('triangleIdentifier', function() {
     it('is a scalene triangle for a user input where side length a does not equal b or c', function() {
         expect(triangleIdentifier(3,4,5)).to.equal('Scalene');
     });
+
+    it('is a scalene triangle for a user input where side length b does not equal a or c', function() {
+        expect(triangleIdentifier(3,4,5)).to.equal('Scalene');
+    });
+
 });
