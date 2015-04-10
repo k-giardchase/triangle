@@ -1,13 +1,13 @@
 var triangleIdentifier = function(a, b, c) {
     if((a >= (b +c)) || (b >= (a + c)) || (c >= (a + b))) {
-      return "Not a triangle";
+      return "unfortunately, dear user, not a triangle";
     } else {
       if( a===b && a === c && b===c) {
-          return "Equilateral";
+          return "equilateral triangle";
       } else if ((a===b) || (a===c) || (b===c)) {
-          return "Isosceles";
+          return "isosceles triangle";
         } else {
-          return "Scalene";
+          return "scalene triangle";
         }
     }
 }
@@ -15,9 +15,9 @@ var triangleIdentifier = function(a, b, c) {
 $(document).ready(function() {
   $('form#triangle').submit(function(event) {
       debugger;
-     var a = parseInt($('input#sideA').val());
-     var b = parseInt($('input#sideB').val());
-     var c = parseInt($('input#sideC').val());
+     var a = parseInt($('input#side_a').val());
+     var b = parseInt($('input#side_b').val());
+     var c = parseInt($('input#side_c').val());
 
      var result = triangleIdentifier(a, b, c);
 
