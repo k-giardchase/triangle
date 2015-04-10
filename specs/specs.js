@@ -7,4 +7,8 @@ describe('triangleIdentifier', function() {
     it('is an isosceles triangle for a user input where side lengths a and b are equal, but not c', function() {
         expect(triangleIdentifier(1,1,2)).to.equal('Isosceles');
     });
+
+    it('is an isosceles triangle for a user input where side lengths a and c are equal, but not b', function() {
+        expect(triangleIdentifier(1,2,1)).to.equal('Isosceles');
+    });
 });
