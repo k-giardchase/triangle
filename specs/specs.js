@@ -29,7 +29,7 @@ describe('triangleIdentifier', function() {
     });
 
     it('is not a triangle for a user input where side length a is at least as long as b and c combined', function() {
-        expect(triangleIdentifier(1,2,1)).to.equal('Not a triangle');
+        expect(triangleIdentifier(2,1,1)).to.equal('Not a triangle');
     });
 
 });
