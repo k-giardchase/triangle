@@ -11,3 +11,20 @@ var triangleIdentifier = function(a, b, c) {
         }
     }
 }
+
+$(document).ready(function() {
+  $('form#triangle').submit(function(event) {
+      debugger;
+     var a = parseInt($('input#sideA').val());
+     var b = parseInt($('input#sideB').val());
+     var c = parseInt($('input#sideC').val());
+
+     var result = triangleIdentifier(a, b, c);
+
+     $('.triangle_result').empty();
+     $('.triangle_result').text(result);
+
+     $('#result').show();
+     event.preventDefault();
+  });
+});
