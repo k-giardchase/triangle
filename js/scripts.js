@@ -1,7 +1,7 @@
 var triangleIdentifier = function(a, b, c) {
     if( a===b && a === c && b===c) {
         return "Equilateral";
-    } else if (a===b) {
+    } else if ((a===b && a!==c) || (a===c && a!==b)) {
         return "Isosceles";
     }
 }
