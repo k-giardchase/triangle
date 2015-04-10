@@ -2,6 +2,13 @@
     display: none;
 }
 
+/*
+The following animation was adapted from a tutorial on square to circle animation found on:
+http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animation--cms-21068
+
+
+*/
+
 .triangle {
     border-color: transparent transparent coral transparent;
     border-style: solid;

@@ -17,8 +17,9 @@ Javascript <br>
 
 
 ##Use and Editing
-To use the app, clone the repository. In the top level of the project folder, click on index.html and open it in your web browser.<br><br>
-To edit the app, you will need jQuery, as well as Mocha and Chai to run BDD tests. These libaries are already located in the js and specs folders, respectively.
+To use the app, clone the repository. In the top level of the project folder, click on index.html and open it in your web browser. NOTE: to view CSS animation, use a google chrome browser.<br><br>
+To edit the app, you will need jQuery, as well as Mocha and Chai to run BDD tests. These libaries are already located in the js and specs folders, respectively. <br><br>
+
 
 ##Copyright (c) 2015 Kyle Giard-Chase
 
