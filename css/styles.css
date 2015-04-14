@@ -26,6 +26,7 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
   border-width: 0 75px 75px 75px;
   height: 0px;
   width: 0px;
+  transition: all 1s;
 }
 
 .isosceles-triangle {
@@ -34,6 +35,7 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
   border-width: 0 50px 100px 50px;
   height: 0px;
   width: 0px;
+  transition: all 1s;
 }
 
 .scalene-triangle {
@@ -42,6 +44,7 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
   border-width: 0 125px 60px 75px;
   height: 0px;
   width: 0px;
+  transition: all 1s;
 }
 
 @-webkit-keyframes rotate {
