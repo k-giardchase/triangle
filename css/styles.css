@@ -9,17 +9,47 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
 
 */
 
-.triangle {
-    border-color: transparent transparent coral transparent;
-    border-style: solid;
-    border-width: 0px 200px 200px 200px;
-    height: 0px;
-    width: 0px;
-    -webkit-animation: square-to-triangle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+#triangle-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
 }
 
-@-webkit-keyframes square-to-triangle {
-  0%  {
+.rotate {
+    -webkit-animation: rotate 8s infinite linear;
+}
+
+.equilateral-triangle {
+  border-color: transparent transparent coral transparent;
+  border-style: solid;
+  border-width: 0 75px 75px 75px;
+  height: 0px;
+  width: 0px;
+}
+
+.isosceles-triangle {
+  border-color: transparent transparent coral transparent;
+  border-style: solid;
+  border-width: 0 50px 100px 50px;
+  height: 0px;
+  width: 0px;
+}
+
+.scalene-triangle {
+  border-color: transparent transparent coral transparent;
+  border-style: solid;
+  border-width: 0 125px 60px 75px;
+  height: 0px;
+  width: 0px;
+}
+
+@-webkit-keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+
+
+  /*0%  {
     border-color:transparent transparent coral transparent;
     border-width: 0px 100px 200px 100px;
     transform:rotate(0deg);
@@ -44,5 +74,5 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
     border-color:transparent transparent darksalmon transparent;
     border-width: 0px 100px 100px 100px;
     transform:rotate(180deg);
-  }
+  }*/
 }

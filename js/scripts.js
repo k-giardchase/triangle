@@ -20,18 +20,25 @@ $(document).ready(function() {
 
     var result = triangleIdentifier(a, b, c);
 
+    $("#triangle-image").removeClass();
+
     if(result === "invalid") {
       alert("Sorry not a valid triangle.");
     }
     else if(result === "equilateral") {
-
+      $("#triangle-image").addClass('equilateral-triangle');
+      $(".equilateral").append("<li>" + a + ", " + b + ", " + c + "</li>");
     }
     else if(result === "isosceles") {
-
+      $("#triangle-image").addClass('isosceles-triangle');
+      $(".isosceles").append("<li>" + a + ", " + b + ", " + c + "</li>");
     }
     else {
-      
+      $("#triangle-image").addClass('scalene-triangle');
+      $(".scalene").append("<li>" + a + ", " + b + ", " + c + "</li>");
     }
+
+    $("#triangle-image").addClass("rotate");
 
     $('.triangle_result').empty();
     $('.triangle_result').text(result);
