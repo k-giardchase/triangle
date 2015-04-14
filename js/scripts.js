@@ -1,24 +1,35 @@
-var triangleIdentifier = function(a, b, c) {
-  if((a >= (b +c)) || (b >= (a + c)) || (c >= (a + b))) {
-    return "invalid";
-  } else {
-      if( a===b && a === c && b===c) {
-        return "equilateral";
-      } else if ((a===b) || (a===c) || (b===c)) {
-          return "isosceles";
-        } else {
-          return "scalene";
-        }
-    }
-}
-
 $(document).ready(function() {
   $('form#triangle').submit(function(event) {
-    var a = parseInt($('input#side_a').val());
-    var b = parseInt($('input#side_b').val());
-    var c = parseInt($('input#side_c').val());
+    var sideA = parseInt($('input#side_a').val());
+    var sideB = parseInt($('input#side_b').val());
+    var sideC = parseInt($('input#side_c').val());
 
-    var result = triangleIdentifier(a, b, c);
+    var triangle = {
+      a: sideA,
+      b: sideB,
+      c: sideC,
+      type:
+      function() {
+        if((this.a >= (this.b + this.c)) || (this.b >= (this.a + this.c)) || (this.c >= (this.a + this.b))) {
+          return "invalid";
+        }
+        else {
+          if( this.a === this.b && this.a === this.c && this.b === this.c) {
+            return "equilateral";
+          }
+          else if ((this.a === this.b) || (this.a === this.c) || (this.b === this.c)) {
+            return "isosceles";
+          }
+          else {
+            return "scalene";
+          }
+        }
+      }
+    }
+
+    var result = triangle.type();
+
+    console.log(result);
 
     $("#triangle-image").removeClass();
 
@@ -27,15 +38,15 @@ $(document).ready(function() {
     }
     else if(result === "equilateral") {
       $("#triangle-image").addClass('equilateral-triangle');
-      $(".equilateral").append("<li>" + a + ", " + b + ", " + c + "</li>");
+      $(".equilateral").append("<li>" + triangle.a + ", " + triangle.b + ", " + triangle.c + "</li>");
     }
     else if(result === "isosceles") {
       $("#triangle-image").addClass('isosceles-triangle');
-      $(".isosceles").append("<li>" + a + ", " + b + ", " + c + "</li>");
+      $(".isosceles").append("<li>" + triangle.a + ", " + triangle.b + ", " + triangle.c + "</li>");
     }
     else {
       $("#triangle-image").addClass('scalene-triangle');
-      $(".scalene").append("<li>" + a + ", " + b + ", " + c + "</li>");
+      $(".scalene").append("<li>" + triangle.a + ", " + triangle.b + ", " + triangle.c + "</li>");
     }
 
     $("#triangle-image").addClass("rotate");
