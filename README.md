@@ -1,5 +1,5 @@
 ##Developers
-Kyle Giard-Chase
+Kyle Giard-Chase & Tom Mertz
 
 ##Date
 April 10 2015

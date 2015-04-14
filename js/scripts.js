@@ -1,13 +1,13 @@
 var triangleIdentifier = function(a, b, c) {
   if((a >= (b +c)) || (b >= (a + c)) || (c >= (a + b))) {
-    return "unfortunately, dear user, not a triangle";
+    return "invalid";
   } else {
       if( a===b && a === c && b===c) {
-        return "equilateral triangle";
+        return "equilateral";
       } else if ((a===b) || (a===c) || (b===c)) {
-          return "isosceles triangle";
+          return "isosceles";
         } else {
-          return "scalene triangle";
+          return "scalene";
         }
     }
 }
@@ -19,6 +19,19 @@ $(document).ready(function() {
     var c = parseInt($('input#side_c').val());
 
     var result = triangleIdentifier(a, b, c);
+
+    if(result === "invalid") {
+      alert("Sorry not a valid triangle.");
+    }
+    else if(result === "equilateral") {
+
+    }
+    else if(result === "isosceles") {
+
+    }
+    else {
+      
+    }
 
     $('.triangle_result').empty();
     $('.triangle_result').text(result);
