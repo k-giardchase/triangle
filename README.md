@@ -17,11 +17,15 @@ Javascript <br>
 
 
 ##Use and Editing
-To use the app, clone the repository. In the top level of the project folder, click on index.html and open it in your web browser. NOTE: to view CSS animation, use a google chrome browser.<br><br>
-To edit the app, you will need jQuery, as well as Mocha and Chai to run BDD tests. These libaries are already located in the js and specs folders, respectively. <br><br>
+To use the app, <br>
+1. Clone the repository. `git clone https://github.com/k-giardchase/triangle.git`<br>
+2. Change directories into the folder `cd triangle`<br>
+3. In the top level of the project folder, open index.html in your web browser.
+<br>NOTE: to view CSS animation, it is best to use a google chrome browser.<br><br>
+To edit the app, you will need jQuery, as well as Mocha and Chai to run BDD tests. These libraries/frameworks are already located in the js and specs folders, respectively. <br><br>
 
 
-##Copyright (c) 2015 Kyle Giard-Chase
+##Copyright (c) 2015 Kyle Giard-Chase & Tom Mertz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
