@@ -2,6 +2,9 @@
     display: none;
 }
 
+body {
+  background-color: darksalmon;
+}
 /*
 The following animation was adapted from a tutorial on square to circle animation found on:
 http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animation--cms-21068
@@ -51,31 +54,4 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 
-
-  /*0%  {
-    border-color:transparent transparent coral transparent;
-    border-width: 0px 100px 200px 100px;
-    transform:rotate(0deg);
-  }
-  25%  {
-    top-border: none;
-    border-color:transparent transparent darksalmon transparent;
-    border-width: 0px 100px 100px 200px;
-    transform:rotate(45deg);
-  }
-  50%  {
-    border-color:transparent transparent indianred transparent;
-    border-width: 0px 200px 100px 100px;
-    transform:rotate(90deg);
-  }
-  75%  {
-    border-color:transparent transparent lightcoral transparent;
-    border-width: 0px 200px 200px 100px;
-    transform:rotate(135deg);
-  }
-  100% {
-    border-color:transparent transparent darksalmon transparent;
-    border-width: 0px 100px 100px 100px;
-    transform:rotate(180deg);
-  }*/
 }

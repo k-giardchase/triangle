@@ -29,8 +29,6 @@ $(document).ready(function() {
 
     var result = triangle.type();
 
-    console.log(result);
-
     $("#triangle-image").removeClass();
 
     if(result === "invalid") {
