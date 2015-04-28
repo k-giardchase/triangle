@@ -2,15 +2,6 @@
     display: none;
 }
 
-body {
-  background-color: darksalmon;
-}
-/*
-The following animation was adapted from a tutorial on square to circle animation found on:
-http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animation--cms-21068
-
-
-*/
 
 #triangle-holder {
   display: flex;
@@ -33,7 +24,7 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
 }
 
 .isosceles-triangle {
-  border-color: transparent transparent coral transparent;
+  border-color: transparent transparent darksalmon transparent;
   border-style: solid;
   border-width: 0 50px 100px 50px;
   height: 0px;
@@ -42,7 +33,7 @@ http://webdesign.tutsplus.com/tutorials/a-beginners-introduction-to-css-animatio
 }
 
 .scalene-triangle {
-  border-color: transparent transparent coral transparent;
+  border-color: transparent transparent indianred transparent;
   border-style: solid;
   border-width: 0 125px 60px 75px;
   height: 0px;
