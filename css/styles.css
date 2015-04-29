@@ -11,7 +11,11 @@
 }
 
 .rotate {
-    -webkit-animation: rotate 8s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
+  -moz-animation: rotate 8s infinite linear;
+  -ms-animation: rotate 8s infinite linear;
+  -o-animation: rotate 8s infinite linear;
+  animation: rotate 8s infinite linear;
 }
 
 .equilateral-triangle {
@@ -44,5 +48,24 @@
 @-webkit-keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
 
+@-moz-keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-ms-keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-o-keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
